@@ -12,6 +12,12 @@
 在最上方显示 Github Readme 和 Wiki 文章的目录。
 
 
+- [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc?hl=zh-CN)
+
+显示Github网站中项目的目录结构。
+
+
+
 
 
 参考链接：[Github Toc - Chrome 插件为 Github Readme 和 Wiki 文章加上目录](https://www.v2ex.com/t/137102)
