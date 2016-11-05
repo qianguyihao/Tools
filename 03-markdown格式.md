@@ -1,17 +1,25 @@
 
-> 以下为Android Studio的常用配置，如果要查看完整的图文教程，请查看本人的博客：[第一次使用Android Studio时你应该知道的一切配置](http://www.cnblogs.com/smyhvae/p/4390905.html)
 
 
 
-## Android Stuio的各种配置settings
+## markdown常用格式
 
 
-### 代码自动提示&自动补齐 
+## markdown常用技巧
+
+## markdown 文章怎样导出
+
+1. 使用为知笔记导出为pdf
+
+2. 使用markdown Pad 导出为pdf
+
+3. 使用sublime Text的插件生成html网页后，直接将html网页保存。
 
 
-AS默认具有代码自动补齐的功能，自动补齐的设置如下：
 
-Editor --> General --> Code Completion，将`Autopopup code completion`选中即可。
+
+
+
 
 
 
