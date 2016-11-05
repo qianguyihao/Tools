@@ -22,7 +22,17 @@ git push origin master -f
 
 
 
-## 参考链接
+
+
+## Others
+
+### 参考书籍
+
+- 《[Git权威指南](https://book.douban.com/subject/6526452/)》
+
+
+
+### 参考链接
 
 - [Gitlab的使用](https://blog.cnbluebox.com/blog/2014/04/15/gitlabde-shi-yong/)
 
