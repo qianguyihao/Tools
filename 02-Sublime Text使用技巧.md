@@ -69,6 +69,8 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 
 解决办法：安装插件`ConvertToUTF8`。
 
+如果是在Mac上使用的话，还得安装一个插件`Codecs33`
+
 
 
 ### 在Sublime Text中进行markdown写作
@@ -86,10 +88,10 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 
 上面这个链接也讲到了gitbook的使用，可以参考下。
 
-**（2）实现实时预览。**
+**（2）实现实时预览：**
 
 同样是在`install package`中安装插件`OmniMarkupPreviewer`。
-文卿
+
 插件安装成功后我们就可以使用快捷键对编辑的markdown源文件进行预览了。下面是几个常用快捷键：
 
 - **Ctrl + Alt + O**：在浏览器中**实时预览**
@@ -112,6 +114,15 @@ Edit  ->  Line  ->  Reindent  ｝
 
 
 参考链接：[Sublime 格式化代码 快捷键以及插件使用](http://blog.csdn.net/vic___/article/details/12615089)
+
+
+
+## mac下的使用
+
+### 字体放大缩小
+
+快捷键：`command + 加号`是放大字体。
+
 
 
 

@@ -6,7 +6,29 @@
 
 ### 在Windows平台安装Git
 
-msysgit是Windows版的Git，下载链接：<https://git-for-windows.github.io/>。下载完成后，按照默认的配置，一路next，即可安装完成。
+msysgit是Windows版的Git，下载链接：[https://git-for-windows.github.io/][1]。下载完成后，按照默认的配置，一路next，即可安装完成。
+
+### 在Mac平台安装Git
+
+
+### 在Mac OS X上安装Git
+
+如果你正在使用Mac做开发，有两种安装Git的方法。
+
+一是安装homebrew，然后通过homebrew安装Git，具体方法请参考homebrew的文档：http://brew.sh/。
+
+第二种方法更简单，也是推荐的方法，就是直接从AppStore安装Xcode，Xcode集成了Git，不过默认没有安装，你需要运行Xcode，选择菜单“Xcode”->“Preferences”，在弹出窗口中找到“Downloads”，选择“Command Line Tools”，点“Install”就可以完成安装了。
+
+PS：新版的Xcode（v8.1）自带了“Command Line Tools”工具。
+
+![](img2016112101.png)
+
+在终端输入`git --version`可以查看git的安装版本：
+
+```bash
+$ git --version
+git version 2.9.3 (Apple Git-75)
+```
 
 
 ### 在Linux平台安装Git
@@ -127,17 +149,11 @@ PS：可以使用`git log`查看版本提交记录。每提交一个新版本，
 ### 小节
 
 - git config（使用git命令之前，如何配置用户信息？）
-
 - git help config（如何使用帮助）
-
 - git init (git 初始化，创建版本库)
-
 - git status (如何查看git管理的状态)
-
 - git add (如何跟踪文件)
-
 - git commit ( 如何提交到版本库中？)
-
 - git log (如何查看提交记录)
 
 
@@ -154,22 +170,22 @@ PS：可以使用`git log`查看版本提交记录。每提交一个新版本，
 img2016110601
 
 
-**工作区：**
+**- 工作区**
 
 就是我们进行工作的地方。
 
 
-**暂存区（Working Directory）：**
+**- 暂存区（Working Directory）**
 
 暂存（index），又名暂存区（staging erea）。位于文件夹`/.git/index`下。
 
 暂存区是可以设置哪些变更要提交到版本库，哪些先不提交。
 
-**本地仓库（local repository）：**
+**- 本地仓库（local repository）**
 
 本地仓库，就是我们自己工作的电脑上保存版本数据的地方。位于文件夹`/.git/object`下。
 
-**远程仓库（remote repository）：**
+**- 远程仓库（remote repository）**
 
 远程仓库，我们用Git进行操作，为了防止数据在自己电脑上丢失，比如错误删除，病毒攻击等原因造成了数据丢失，我们需要备份到远程的服务器上，这个服务器可以理解为远程仓库。
 
@@ -183,7 +199,7 @@ img2016110601
 ## 其他操作
 
 
-**[修改commit message](http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git)：**
+**[修改commit message][2]：**
 
 ```bash
 git commit --amend -m "New commit message"
@@ -191,13 +207,37 @@ git commit --amend -m "New commit message"
 
 
 
-**强制push，[覆盖](https://ruby-china.org/topics/7365)远程版本：**
+**强制push，[覆盖][3]远程版本：**
 
 ```bash
 git push origin master -f
 ```
 
 
+
+
+### git 忽略已经被提交的文件gu
+
+摘要: git的(.gitignore)不能直接忽略已经在版本库同步了的文件,只能控制本地忽略(不同步)某个文件。
+
+如果想在本地忽略某个文件的话执行这个命令:
+
+```bash
+git update-index --assume-unchanged <file>
+```
+
+
+如果想重新同步这个文件的话执行命令：
+
+```bash
+git update-index --no-assume-unchanged <file>
+```
+
+参考链接：
+
+- [git忽略已经被提交的文件](https://my.oschina.net/oldfeel/blog/286950)
+
+- [git忽略已经被提交的文件](https://segmentfault.com/q/1010000000430426)
 
 
 
@@ -207,19 +247,17 @@ git push origin master -f
 
 ### 参考书籍
 
-- 《[Git权威指南](https://book.douban.com/subject/6526452/)》
+- 《[Git权威指南][4]》
 
 
 
 ### 参考链接
 
-- [Gitlab的使用](https://blog.cnbluebox.com/blog/2014/04/15/gitlabde-shi-yong/)
+- [Gitlab的使用][5]
 
-从这里知道了图形界面工具[SoureTree](http://www.sourcetreeapp.com/)
+从这里知道了图形界面工具[SoureTree][6]
 
-- [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
-
-
+- [常用 Git 命令清单][7]
 
 
 
@@ -231,3 +269,12 @@ git push origin master -f
 
 
 
+
+
+[1]:	https://git-for-windows.github.io/
+[2]:	http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git
+[3]:	https://ruby-china.org/topics/7365
+[4]:	https://book.douban.com/subject/6526452/
+[5]:	https://blog.cnbluebox.com/blog/2014/04/15/gitlabde-shi-yong/
+[6]:	http://www.sourcetreeapp.com/
+[7]:	http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html

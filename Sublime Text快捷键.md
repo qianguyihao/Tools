@@ -9,28 +9,6 @@ tags:
 
 
 
-### 编辑
-
-| 快捷键 | 作用 | 备注 |
-|:-------------|:-------------|:-----|
-| Ctrl + Enter | 在当前行下面新增一行然后跳至该行 | 即使光标不在行尾，也能快速向下插入一行。 |
-|  Ctrl + Shift + Enter | 在当前行上面增加一行并跳至该行  |   |
-|  **Ctrl+K+K** |  从光标处开始删除代码至行尾。按住Ctrl，按两次K |   |
-| Ctrl+/  |  注释单行 |   |
-| Ctrl+Shift+/  | 注释多行  |   |
-|  Ctrl+K+U |  转换大写 |   |
-| Ctrl+K+L  |  转换小写 |   |
-|  Ctrl+F2 |  设置书签，F2切换书签* |   |
-|  Ctrl+T |  左右字母互换 |   |
-| F6  | 单词检测拼写 |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-|   |   |   |
-
-
 
 
 
@@ -189,7 +167,6 @@ tags:
 
 ## 参考链接
 
-- [Sublime Text 全程指引 by Lucida](http://www.cnblogs.com/figure9/p/sublime-text-complete-guide.html)【荐】
 
 - [我的Sublime Text 3 配置](http://lovenight.github.io/2015/11/30/%E6%88%91%E7%9A%84Sublime-Text-3-%E9%85%8D%E7%BD%AE/)
 
