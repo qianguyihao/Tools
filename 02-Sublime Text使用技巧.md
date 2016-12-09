@@ -90,7 +90,7 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 
 **（2）实现实时预览：**
 
-同样是在`install package`中安装插件`OmniMarkupPreviewer`。
+同样是在`install package`中安装插件`OmniMarkupPreviewer`。因为网的原因，这个插件安装的时间会比较久。
 
 插件安装成功后我们就可以使用快捷键对编辑的markdown源文件进行预览了。下面是几个常用快捷键：
 
