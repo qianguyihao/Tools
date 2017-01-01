@@ -13,6 +13,7 @@ tags:
 
 - [Sublime Text 3 官方下载地址](http://www.sublimetext.com/3)
 
+- [Sublime Text 3 3126 注册码](https://fatesinger.com/78705)
 
 ## 资料
 

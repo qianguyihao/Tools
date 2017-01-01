@@ -11,8 +11,6 @@ msysgit是Windows版的Git，下载链接：[https://git-for-windows.github.io/]
 ### 在Mac平台安装Git
 
 
-### 在Mac OS X上安装Git
-
 如果你正在使用Mac做开发，有两种安装Git的方法。
 
 一是安装homebrew，然后通过homebrew安装Git，具体方法请参考homebrew的文档：http://brew.sh/。
@@ -111,9 +109,9 @@ git clone [url]
 ### 提交文件
 
 - `git add`：把文件修改添加到暂存区。
-- `git commit`：把暂存区的所有修改提交到版本库（提交到当前分支）。
+- `git commit`：把暂存区的所有修改提交到本地版本库（提交到当前分支）。
 
-**`git add`的使用如下：**
+**1、`git add`的使用如下：**
 
 ```bash
 $ git add .  //添加当前目录下的所有文件
@@ -126,19 +124,24 @@ $ git add src/\*.txt    //添加src目录下的所有txt文件
 PS：可以使用`git status`查看状态。
 
 
-**`git commit`的使用如下：**
+**2、`git commit`的使用如下：**
+
+提交暂存区到本地仓库区：（用得最多）
 
 ```bash
-# 提交暂存区到仓库区
 $ git commit -m "一些说明"
+```
 
-# 使用一次新的commit，替代上一次提交
-# 如果代码没有任何新变化，则用来改写上一次commit的提交信息
+使用一次新的commit，替代上一次提交：（如果代码没有任何新变化，则用来改写上一次commit的提交信息）
+
+```bash
 $ git commit --amend -m "一些说明"
+```
 
-# 重做上一次commit，并包括指定文件的新变化
+重做上一次commit，并包括指定文件的新变化：（相当于是在上一次commit中追加一些新的文件）
+
+```bash
 $ git commit --amend [file1] [file2] ...
-
 ```
 
 PS：可以使用`git log`查看版本提交记录。每提交一个新版本，实际上Git就会把它们自动串成一条时间线。这条命令可以更清楚地看到提交历史的时间线。
@@ -159,33 +162,29 @@ PS：可以使用`git log`查看版本提交记录。每提交一个新版本，
 
 ## 工作区、暂存区的概念
 
-- untracked：没有被跟踪（即未被add）
-- Workspace：工作区
-- Index / Stage：暂存区
-- Local Repository：本地仓库/本地版本库
-- Remote Repository：远程仓库
 
 来看下面这张图：
 
 img2016110601
 
+- untracked：没有被跟踪（即未被add）
 
-**- 工作区**
+- **工作区**（Workspace）
 
 就是我们进行工作的地方。
 
 
-**- 暂存区（Working Directory）**
+- **暂存区（Working Directory / Index / Stage）**
 
 暂存（index），又名暂存区（staging erea）。位于文件夹`/.git/index`下。
 
 暂存区是可以设置哪些变更要提交到版本库，哪些先不提交。
 
-**- 本地仓库（local repository）**
+- **本地仓库（Local Repository）**
 
 本地仓库，就是我们自己工作的电脑上保存版本数据的地方。位于文件夹`/.git/object`下。
 
-**- 远程仓库（remote repository）**
+- **远程仓库（Remote Repository）**
 
 远程仓库，我们用Git进行操作，为了防止数据在自己电脑上丢失，比如错误删除，病毒攻击等原因造成了数据丢失，我们需要备份到远程的服务器上，这个服务器可以理解为远程仓库。
 
@@ -262,18 +261,18 @@ git push origin master -f
 
 
 
-### git 忽略已经被提交的文件gu
+### git 忽略已经被提交的文件
 
-摘要: git的(.gitignore)不能直接忽略已经在版本库同步了的文件,只能控制本地忽略(不同步)某个文件。
+声明： git的`.gitignore`文件不能直接忽略已经在版本库同步了的文件，只能控制本地忽略(不同步)某个文件。
 
-如果想在本地忽略某个文件的话执行这个命令:
+如果想在本地忽略某个文件的话，执行如下命令:
 
 ```bash
 git update-index --assume-unchanged <file>
 ```
 
 
-如果想重新同步这个文件的话执行命令：
+如果想重新同步这个文件的话，执行如下命令：
 
 ```bash
 git update-index --no-assume-unchanged <file>
