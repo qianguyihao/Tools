@@ -5,7 +5,7 @@
 ## Git的安装及创建版本库
 
 ### 在Windows平台安装Git
-
+fewff
 msysgit是Windows版的Git，下载链接：[https://git-for-windows.github.io/][1]。下载完成后，按照默认的配置，一路next，即可安装完成。
 
 ### 在Mac平台安装Git
@@ -30,6 +30,8 @@ git version 2.9.3 (Apple Git-75)
 
 
 ### 在Linux平台安装Git
+
+
 
 首先，可以试着输入git，看看系统有没有安装Git：
 
@@ -106,7 +108,7 @@ git clone [url]
 整个`mysite`文件夹称之为**工作区**。最后生成的`.git`文件夹就是**版本库**。
 
 
-### 提交文件
+## 代码提交
 
 - `git add`：把文件修改添加到暂存区。
 - `git commit`：把暂存区的所有修改提交到本地版本库（提交到当前分支）。
