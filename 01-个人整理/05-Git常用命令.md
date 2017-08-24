@@ -243,10 +243,10 @@ $ git stash pop
 
 
 
-## 其他操作
+## 常见问题
 
 
-**[修改commit message][2]：**
+### [修改commit message](http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git)
 
 ```bash
 git commit --amend -m "New commit message"
@@ -254,13 +254,11 @@ git commit --amend -m "New commit message"
 
 
 
-**强制push，[覆盖][3]远程版本：**
+强制push，[覆盖](https://ruby-china.org/topics/7365)远程版本
 
 ```bash
 git push origin master -f
 ```
-
-
 
 
 ### git 忽略已经被提交的文件
@@ -288,6 +286,20 @@ git update-index --no-assume-unchanged <file>
 
 
 
+
+### 进行文件改动后，未commit，然后切换分支
+
+我推荐你用`git stash`暂存起来，切换回来的时候用`git stash apply`重新获取刚才的变更。切换的时候给你一个干净的工作目录。
+
+有几种选择：
+
+1. add并且commit，再checkout，提交到当前分支
+2. add但不commit，可以stash，然后checkout回来之后stash apply，在commit，提交到当前分支
+3. add但不commit，也不stash，直接checkout，然后再commit的话，记录就在切换分支下面。
+
+其背后的原因：一个本地的git repo只有一个工作区和暂存区，但是有多个分支的提交区，而我们的checkout只是将HEAD指针从一个分支切换到另一个分支。
+
+参考链接：<https://segmentfault.com/q/1010000000156026>
 
 
 ## Others
@@ -319,8 +331,8 @@ git update-index --no-assume-unchanged <file>
 
 
 [1]:	https://git-for-windows.github.io/
-[2]:	http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git
-[3]:	https://ruby-china.org/topics/7365
+[2]:	
+[3]:	
 [4]:	https://book.douban.com/subject/6526452/
 [5]:	https://blog.cnbluebox.com/blog/2014/04/15/gitlabde-shi-yong/
 [6]:	http://www.sourcetreeapp.com/	
