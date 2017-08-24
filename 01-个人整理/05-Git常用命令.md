@@ -246,20 +246,26 @@ $ git stash pop
 ## 常见问题
 
 
-### [修改commit message](http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git)
+### 修改commit message
+
+命令如下：
 
 ```bash
 git commit --amend -m "New commit message"
 ```
 
+参考链接：[#](http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git)
 
 
-强制push，[覆盖](https://ruby-china.org/topics/7365)远程版本
+### 强制push，[覆盖]()远程版本
+
+命令如下：
 
 ```bash
 git push origin master -f
 ```
 
+参考链接：[#](https://ruby-china.org/topics/7365)
 
 ### git 忽略已经被提交的文件
 
@@ -299,7 +305,7 @@ git update-index --no-assume-unchanged <file>
 
 其背后的原因：一个本地的git repo只有一个工作区和暂存区，但是有多个分支的提交区，而我们的checkout只是将HEAD指针从一个分支切换到另一个分支。
 
-参考链接：<https://segmentfault.com/q/1010000000156026>
+参考链接：[#](https://segmentfault.com/q/1010000000156026)
 
 
 ## Others
