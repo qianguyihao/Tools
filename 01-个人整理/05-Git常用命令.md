@@ -257,7 +257,7 @@ git commit --amend -m "New commit message"
 参考链接：[#](http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git)
 
 
-### 强制push，[覆盖]()远程版本
+### 强制push，覆盖远程版本
 
 命令如下：
 
