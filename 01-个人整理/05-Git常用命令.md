@@ -295,17 +295,29 @@ git update-index --no-assume-unchanged <file>
 
 ### 进行文件改动后，未commit，然后切换分支
 
-我推荐你用`git stash`暂存起来，切换回来的时候用`git stash apply`重新获取刚才的变更。切换的时候给你一个干净的工作目录。
+推荐你用`git stash`暂存起来，切换回来的时候用`git stash apply`重新获取刚才的变更。切换的时候给你一个干净的工作目录。
 
 有几种选择：
 
-1. add并且commit，再checkout，提交到当前分支
-2. add但不commit，可以stash，然后checkout回来之后stash apply，在commit，提交到当前分支
-3. add但不commit，也不stash，直接checkout，然后再commit的话，记录就在切换分支下面。
+- （1）add并且commit，再checkout到另外一个分支，提交到当前分支。
+- （2）add但不commit，可以stash，再checkout到另外一个分支，然后再checkout回来之后stash apply，再commit，提交到当前分支。
+- （3）add但不commit，也不stash，直接checkout，然后再commit的话，记录就在切换分支下面。
 
 其背后的原因：一个本地的git repo只有一个工作区和暂存区，但是有多个分支的提交区，而我们的checkout只是将HEAD指针从一个分支切换到另一个分支。
 
 参考链接：[#](https://segmentfault.com/q/1010000000156026)
+
+
+
+
+
+### 弹出提示：Another git process seems to be running in this repository
+
+解决办法：try deleting .lock file in your .git directory.
+
+Generally such problems occurs when you execute two git commands simultaneously maybe one from command prompt and one from IDE.
+
+
 
 
 ## Others
