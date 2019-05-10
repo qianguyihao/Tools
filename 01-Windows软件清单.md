@@ -25,10 +25,6 @@
 
 
 
-
-
-
-
 ## IT
 
 ### git 版本管理
@@ -50,7 +46,6 @@
 操作说明在官方的[Github](https://github.com/liulex/Snipaste-Feedback/wiki)，产品介绍可以看这个链接：[Snipaste - 开发了三年的截图工具，但不只是截图](https://www.v2ex.com/t/295433?p=7)
 
 
-
 ### gif动画录制
 
 - [LICEcap](https://www.cockos.com/licecap/)
@@ -60,5 +55,7 @@
 
 
 ### Windows视频录制工具
+
+- [KK录像机](http://www.kklxj.com)
 
 -  Camtasia 录像器。尚硅谷用的视频录制软件。

@@ -137,6 +137,11 @@ E36B85CC 84991F19 7575D828 470A92AB
 如果想在新的标签页中打开新的文件，可以设置此参数；设置后，打开文件需要双击。
 
 
+
+
+
+
+
 还有一种方法是尝试增加属性`"preview_on_click": false`，但是这样的话，需要双击才能打开新的文件。体验不好。
 
 
@@ -173,9 +178,11 @@ import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.
 如果顺利的话，此时就可以在Preferences菜单下看到Package Settings和Package Control两个菜单了。
 
 
+
 （2）用`Ctrl + Shift + P`打开命令板，输入`PCI`应出现Package Control。此时表明安装成功。
 
 之后，我们就可以方便的安装使用Sublime Text的各种插件了。
+
 
 
 **方法二：**（Sublime Text 3143的安装）
@@ -234,11 +241,14 @@ Package control 好不容易安装好了，当你尝试去安装别的插件的�
 ```
 
 
+
 参考链接：
 
 - [知乎](https://www.zhihu.com/question/34386189/answer/80188612)
 
 - [csdn](http://blog.csdn.net/q2365921/article/details/74298371)
+
+
 
 
 
@@ -286,9 +296,10 @@ Package control 好不容易安装好了，当你尝试去安装别的插件的�
 
 参考链接：[介绍Sublime3下两款Markdown插件](http://www.jianshu.com/p/335b7d1be39e)
 
+
 预览的时候，如果出现下面这样的错误：
 
-![](http://img.smyhvae.com/201801101430.png)
+201801101430.png
 
 解决办法：
 
@@ -358,6 +369,7 @@ Edit  ->  Line  ->  Reindent  ｝
 
 
 
+
 ## 快捷键汇总
 
 
@@ -415,6 +427,7 @@ Edit  ->  Line  ->  Reindent  ｝
 - 选择数行文本，然后按下 Shift + Ctrl + L。
 通过反复按下 Ctrl + D 即可将全文中与光标当前所在位置的词相同的词逐一加入选择，而直接按下 Alt+F3即可一次性选择所有相同的词。
 - 按下鼠标中键来进行垂直方向的纵列选择，也可以进入多重编辑状态。
+
 
 
 

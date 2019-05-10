@@ -251,7 +251,7 @@ $ git stash pop
 命令如下：
 
 ```bash
-git commit --amend -m "New commit message"
+git commit --amend -m "feat(拼购商详):接入猜你喜欢 20180605"
 ```
 
 参考链接：[#](http://stackoverflow.com/questions/179123/edit-an-incorrect-commit-message-in-git)
